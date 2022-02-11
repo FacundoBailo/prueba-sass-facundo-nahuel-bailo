@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg, #537895 0%, #09203f 74%);
+}
+
+.grid-areas{
+    display: grid;
+    grid-template-areas: 
+    "menu menu"
+    "cuerpo cuerpo"
+    "pie pie";
+
+    grid-template-rows: 7% auto 10%;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+nav{
+    grid-area: menu;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    grid-area: cuerpo;
+}
+
+footer{
+    grid-area: pie;
+}

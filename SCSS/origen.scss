@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+@import "sobre-mi";
+@import "estructura";
+
+$blanco: white;
+
+nav{
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    font-size: 17px;
+    justify-content: baseline;
+    align-items: center;
+
+    .nav-logo {
+        width: 50px;
+        position: relative;
+        left: 5%;
+    }
+
+    .menu{
+        padding: 10px;
+        margin: 1px;
+        position: relative;
+        left: 35%;
+        font-size: 20px;
+    }
+
+}
+
+ul{
+    li{
+        list-style-type: none;
+        display: inline;
+
+        a{
+            padding: 10px;
+            color: $blanco;
+            text-decoration: none;
+        
+            &:hover{
+                border-bottom: 2px solid $blanco;
+            }
+        
+        }
+    }
+}
+
+h1{
+    font-style: bold;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 305px;
+    color: $blanco;
+
+    animation-name: h1-index;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+
+    @keyframes h1-index{
+        from{
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 100;
+        }
+    }
+}   
+
+h2{
+    font-style: bol d;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: $blanco;
+
+    animation-name: h2-index;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    animation-delay: 0s;
+
+    @keyframes h2-index{
+        from{
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 100;
+        }   
+    }
+}
+
+h3{
+    font-style: normal;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5%;
+    text-align: center;
+    color: $blanco;
+
+    animation-name: h3-index;
+    animation-iteration-count: 1;
+    animation-duration: 11s;
+    animation-delay: 0s;
+
+    @keyframes h3-index{
+        from{
+            opacity: 0;
+        }
+    
+        to{
+            opacity: 100;
+        }
+    }
+}
+
+.redes-inicio{  
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: redes-index;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+
+    @keyframes redes-index{
+            from{
+            transform: translateY(200px);
+            opacity: 0;
+            }
+        
+            to{
+            transform: translateY(0);
+            opacity: 100;
+            }
+        }
+    
+        .redes-inicio a {
+            color: black;
+            padding: 3px 30px;
+
+            &:hover{
+                border: none;
+            }
+        }
+        
+}
+
+footer{
+    background-color: rgb(46, 45, 45);
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: $blanco;
+
+    .copy{
+        font-size: 10px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+}
+
+

@@ -1,0 +1,55 @@
+
+.subtitulos{
+    position: relative;
+    top: 5%;
+    text-align: left;
+    padding: 1em 0;
+    margin: 10px 50px;
+    width: 100%;
+
+    animation-name: subtitulosmov;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    animation-delay: 0ms;
+
+    @keyframes subtitulosmov{
+        from{
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+    
+        to{
+            transform: translateX(0);
+            opacity: 100;
+        }
+    }
+}
+
+.descripcion{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 8% 25%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px white;
+}
+
+
+
+.redesFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .linkFooter{
+        color: white;
+    }
+}
+
+
+
